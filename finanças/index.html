@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://www.bing.com/images/search?view=detailV2&ccid=091veuYG&id=F1250CCF699632D03CB7B60618C95738604FF172&thid=OIP.091veuYG77cE2w8t19t8fwHaE8&mediaurl=https%3a%2f%2fffw.uol.com.br%2fapp%2fuploads%2fnoticias%2f2017%2f04%2ftasha-e-tracie-2-1200x800.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d3dd6f7ae606efb704db0f2dd7db7c7f%3frik%3dcvFPYDhXyRgGtg%26pid%3dImgRaw%26r%3d0&exph=800&expw=1200&q=tasha+e+tracie&simid=608054798608784136&FORM=IRPRST&ck=E7E9FB4BDC30BC820AB8FFEF6B98D3B0&selectedIndex=0" alt="">
+        </div>
+        <div>
+            <p>BEM-VINDA JM</p>
+            <p>Esse é o seu conttrole finceiro</p>
+        </div>
+    </header>
+    <main>
+        <div class="resumo">
+        </div>
+        <div>
+            Entradas: R$
+            <span class="entradas">0.00</span>
+        </div>
+        <div>
+            Saidas: R$
+            <span class="saidas">0.00</span>
+        </div>
+        <div>
+            total:R$
+            <span class="total"></span>
+        </div>
+        <div class="novoItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc" />
+            </div>
+            <div class="divValor">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" />
+            </div>
+            <div class="divTipo">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option>Entrada</option>
+                    <option>Saida</option>
+                </select>
+                <div>
+                    <button id="btnNovo">Incluir</button>
+                </div>
+                <div class="divTabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th class="columnValor"></th>
+                                <th class="columnTipo"></th>
+                                <th class="columnAcao"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <td>${item.desc}</td>
+    <td>R$ ${item.valor}</td>
+    <td class="columnTipo">${item.tipo === "Entrada"
+        ? 'subiu'
+        : 'desceu'
+    }</td>
+    
+<td class="columnAcao">
+    <button onclick="deleteItem($[index])">LX</button>
+</td>
+
+</body>
+</html>
